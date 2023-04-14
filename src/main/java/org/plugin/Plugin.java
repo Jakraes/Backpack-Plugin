@@ -1,9 +1,13 @@
 package org.plugin;
 
+import org.bukkit.Bukkit;
+import org.bukkit.Material;
+import org.bukkit.NamespacedKey;
 import org.bukkit.event.Listener;
+import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.plugin.commands.giveItem;
 import org.plugin.items.Backpack;
+import org.plugin.listeners.BackpackCraftListener;
 import org.plugin.listeners.BackpackMenuListener;
 import org.plugin.listeners.BackpackOpenListener;
 
@@ -25,7 +29,17 @@ public final class Plugin extends JavaPlugin implements Listener {
 
         getServer().getPluginManager().registerEvents(new BackpackOpenListener(), this);
         getServer().getPluginManager().registerEvents(new BackpackMenuListener(), this);
-        getCommand("giveItem").setExecutor(new giveItem());
+        getServer().getPluginManager().registerEvents(new BackpackCraftListener(), this);
+
+        NamespacedKey key = new NamespacedKey(this, "backpack");
+        ShapedRecipe recipe = new ShapedRecipe(key, new Backpack());
+
+        recipe.shape("SLS", "LIL", "SLS");
+        recipe.setIngredient('S', Material.STICK);
+        recipe.setIngredient('L', Material.LEATHER);
+        recipe.setIngredient('I', Material.IRON_INGOT);
+
+        Bukkit.addRecipe(recipe);
     }
 
     @Override

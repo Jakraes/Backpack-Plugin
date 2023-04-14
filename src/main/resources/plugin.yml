@@ -3,8 +3,4 @@ version: '${version}'
 main: org.plugin.Plugin
 api-version: 1.19
 author: Jakraes
-description: None
-commands:
-  giveItem:
-    description: Gives item.
-    usage: /<command>
+description: A backpack plugin
