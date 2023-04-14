@@ -1,0 +1,10 @@
+name: "Jaks-Backpacks"
+version: '1.1'
+main: org.plugin.Plugin
+api-version: 1.19
+author: Jakraes
+description: None
+commands:
+  giveItem:
+    description: Gives item.
+    usage: /<command>

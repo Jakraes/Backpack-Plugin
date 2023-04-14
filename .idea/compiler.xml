@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.8">
+      <module name="Jakraes_Backpacks.main" target="17" />
+      <module name="Jakraes_Backpacks.test" target="17" />
+      <module name="plugin.main" target="17" />
+      <module name="plugin.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
