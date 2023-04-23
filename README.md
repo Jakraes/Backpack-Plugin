@@ -2,14 +2,14 @@
 
 ````
 ┌───┬───┬───┐
-│ S │ L │ S │
+│ L │ I │ L │
 ├───┼───┼───┤
-│ L │ I │ L │ → Backpack recipe
+│ I │ C │ I │ → Backpack recipe
 ├───┼───┼───┤
-│ S │ L │ S │
+│ L │ I │ L │
 └───┴───┴───┘
 
-S → Stick
 L → Leather
 I → Iron Ingot
+C → Chest
 ````
