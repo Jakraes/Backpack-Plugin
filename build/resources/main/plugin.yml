@@ -1,6 +1,4 @@
-name: "Jaks-Backpacks"
-version: '1.1'
-main: org.plugin.Plugin
+name: Jaks_Backpack
+version: '2.0'
+main: org.plugin.JaksBackpack
 api-version: 1.19
-author: Jakraes
-description: A backpack plugin

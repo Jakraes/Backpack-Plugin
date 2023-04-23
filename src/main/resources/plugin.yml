@@ -1,6 +1,4 @@
-name: "Jaks-Backpacks"
+name: Jaks_Backpack
 version: '${version}'
-main: org.plugin.Plugin
+main: org.plugin.JaksBackpack
 api-version: 1.19
-author: Jakraes
-description: A backpack plugin
